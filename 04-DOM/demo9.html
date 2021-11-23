@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>My first page</title>
+    </head>
+    <body>
+
+        <h1 id="heading">Intro to DOM</h1>
+        <ul>
+            <li id="methods-list-item" class="list-item">Dom Method</li>
+            <li class="list-item">Dom Properties</li>
+        </ul>
+      
+        <script>
+            let ulElement = document.querySelector('li'); 
+            
+            ulElement.innerHTML += '<li>Newly added!</li>'
+
+        </script>
+
+    </body>
+</html>

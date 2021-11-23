@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>My first page</title>
+    </head>
+    <body>
+
+        <h1>Intro to DOM</h1>
+        <ul>
+            <li id="methods-list-item">Dom Method</li>
+            <li>Dom Properties</li>
+        </ul>
+      
+        <script>
+            let listItemElements = document.getElementsByTagName('li');
+
+            let propertiesElement = listItemElements[1]
+            propertiesElement.innerHTML += ' - Selected!';
+        </script>
+
+    </body>
+</html>

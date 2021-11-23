@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>My first page</title>
+    </head>
+    <body>
+
+        <h1>Intro to DOM</h1>
+        <ul>
+            <li>Dom Method</li>
+            <li>Dom Properties</li>
+        </ul>
+      
+        <script>
+            let h1Elements = document.getElementsByTagName('h1');
+            let h1Element = h1Elements[0];
+            h1Element.innerHTML += ', YEY!';
+        </script>
+
+    </body>
+</html>

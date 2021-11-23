@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>My first page</title>
+    </head>
+    <body>
+
+        <h1 id="heading">Intro to DOM</h1>
+        <ul>
+            <li id="methods-list-item" class="list-item" data-name='Ivaylo'>Dom Method</li>
+            <li class="list-item">Dom Properties</li>
+        </ul>
+      
+        <script>
+            let liElement = document.querySelector('#methods-list-item'); 
+
+            liElement.style.backgroundColor = 'pink';
+            liElement.style.color = 'white';
+
+        </script>
+
+    </body>
+</html>

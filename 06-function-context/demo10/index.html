@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="dropdown">
+            Choose your style
+        </button>
+        <ul id="dropdown-ul">
+            <li class="deep">rgb(255, 143, 143)</li>
+            <li class="deep1">rgb(250, 215, 151)</li>
+            <li class="deep2">rgb(251, 251, 167)</li>
+            <li class="deep3">rgb(228, 255, 173)</li>
+            <li class="deep4">rgb(174, 174, 251)</li>
+        </ul>
+    </div>
+    <div id="box">Box</div>
+</body>
+<script>solve()</script>
+<script>
+    function speak(message, endMessage) {
+        this.grades.forEach(grade => {
+            console.log(`${this.name}:${message} - ${grade}`);
+        });
+        console.log(endMessage);
+    }
+
+    let person = {
+        name: 'Pesho',
+        grades: [2, 3, 4, 2, 6],
+    }
+    /*tova suzdava nova funkciq*/
+    let speakWrapper = speak.bind(person);
+
+    speakWrapper('sorry', 'i will be back');
+
+    /*v2*/
+    let anotherWrapper = speak.bind(person, 'hello'); /*tova dava context person i defolten argument hello, koito shte e vinagi tam*/
+    anotherWrapper('i am panyo') /*tova izvikva funkciqta, izpolzvaiki defoltniq 1vi argument hello i vtori argument i am panyo*/
+</script>
+
+</html>

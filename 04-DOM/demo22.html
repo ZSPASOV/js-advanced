@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>My first page</title>
+        <style>
+            .selected {
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 id="heading">Intro to DOM</h1>
+        <ul>
+            <li id="methods-list-item" class="list-item">Dom Method</li>
+            <li class="list-item">Dom Properties</li>
+        </ul>
+      
+        <script>
+            let parentElement = document.getElementsByTagName('ul')[0];
+
+            console.log(parentElement.children);
+            
+        </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>My first page</title>
+        <style>
+            .selected {
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 id="heading">Intro to DOM</h1>
+        <ul onclick="onListClick()" style="cursor: pointer">
+            <li id="methods-list-item" class="list-item">Dom Method</li>
+            <li class="list-item">C#</li>
+            <li class="list-item">JAVA</li>
+            <li class="list-item">Python</li>
+        </ul>
+      
+        <script>
+            function onListClick() {
+                let parentElement = document.getElementsByTagName('ul')[0];
+                let lastElement = parentElement.lastElementChild;
+
+                parentElement.prepend(lastElement);
+            }
+        </script>
+
+    </body>
+</html>
+
