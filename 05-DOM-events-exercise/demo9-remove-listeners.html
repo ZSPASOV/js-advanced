@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM</title>
+</head>
+
+<body>
+    <ul id="items">
+        <li class="red">Manchester</li>
+        <li class="blue">Chelsea</li>
+        <li class="red">Liverpool</li>
+        <li class="blue">Everton</li>
+        <li class="blue">Man City</li>
+    </ul>
+
+</body>
+<script>
+
+const password = document.querySelector('input[type="password"]');
+const button = document.querySelector('button');
+password.addEventListener('focus', focusEvent);
+
+function focusEvent (){
+    event.target.style.background = '#234465';
+}
+
+password.addEventListener('blur', (event) => {
+    event.target.style.background = '';
+});
+
+button.addEventListener('click', () => {
+    password.removeEventListener('focus', focusEvent);
+});
+
+
+</script>
+
+</html>

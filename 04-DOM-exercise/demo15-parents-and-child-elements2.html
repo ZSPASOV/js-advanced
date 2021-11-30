@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <article class="list">
+            <p>First</p>
+            <p>Second</p>
+            <p>Third</p>
+            <p>PPT When some element contains other elements, that means he is parent of those elements</p>
+            <p>PPT They are children to the parent. They can be accessed by property children</p>
+        </article>
+        <script>
+            let pElements = document.getElementsByTagName('div')[0].children;
+            console.log(pElements);
+            console.log(pElements[0].innerHTML);
+        </script>
+    </div>
+</body>
+
+</html>

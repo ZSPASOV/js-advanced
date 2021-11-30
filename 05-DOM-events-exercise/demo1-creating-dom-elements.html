@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM</title>
+</head>
+
+<body>
+    <h1>Introduction to Dom</h1>
+    <p>HTML DOM property is a value that you can get or set (changing the content of an HTML element)</p>
+    <ul>
+        <li>DOM Methods example</li>
+        <li>DOM Properties example</li>
+    </ul>
+
+    <ul id="my-list">
+        <li>Sofia</li>
+        <li>Pleven</li>
+        <li>Varna</li>
+        <li>Plovdiv</li>
+    </ul>
+</body>
+<script>
+// Creating a new DOM element
+let p = document.createElement("p");
+console.log(p);
+let li = document.createElement("li");
+console.log(li);
+// Create a copy / cloning DOM element
+let otherLi = document.getElementById("my-list");
+console.log(otherLi);
+let newLi = otherLi.cloneNode(true);
+console.log(newLi.textContent);
+// Elements are created in memory – they don't exist on the page
+// To become visible, they must be appended to the DOM tree
+
+
+</script>
+
+</html>

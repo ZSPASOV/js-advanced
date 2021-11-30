@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM</title>
+</head>
+
+<body>
+    <h1>Introduction to Dom</h1>
+    <p>HTML DOM property is a value that you can get or set (changing the content of an HTML element)</p>
+
+    <ul id="my-list">
+        <li>Sofia</li>
+        <li>Pleven</li>
+        <li>Varna</li>
+        <li>Plovdiv</li>
+        <li>Burgas</li>
+    </ul>
+</body>
+<script>
+const element = document.getElementById('my-list');
+element.addEventListener('click', e => {
+    console.log(e.target);
+})
+</script>
+
+</html>

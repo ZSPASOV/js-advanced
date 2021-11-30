@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM</title>
+</head>
+
+<body>
+    <h1>Introduction to Dom</h1>
+    <ul>
+        <li>PPT Code can be executed in the page in different ways</li>
+        <li>PPT Directly in the developer console – when debugging</li>
+        <li>PPT As a page event handler – e.g., user clicks on a button</li>
+        <button onclick="console.log('Hello, DOM!')">Click Me</button>
+        <li>PPT Via inline script, using script tags</li>
+        <li>PPT By importing from external file – most flexible method</li>
+    </ul>
+</body>
+<script>
+    let secondLi = document.getElementsByTagName('li')[1]
+    secondLi.innerHTML += ' - DONE';
+</script>
+
+</html>

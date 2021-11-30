@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <article class="list">
+            <ul>            
+                <li>Panyo</li>
+                <li>Kiro</li>
+                <li>Yasen</li>
+                <li>PPT Sometimes we need to target an element based on its relation to other similar element</li>
+                <li>PPT E.g., row or column in a table, list item, etc.</li>
+                <li>PPT Can be done either by index or with a CSS selector</li></ul>
+        </article>
+        <script>
+            const list = document.getElementsByTagName('ul')[0];
+            // First <ul> on the page
+            const secondLi = list.getElementsByTagName('li')[1];
+            // Third <li> inside the selected <ul>
+            const thirdLi = document.querySelector('ul li:nth-child(3)');
+            // Third <li> inside the first <ul> on the page
+            console.log(secondLi.innerHTML);
+            console.log(thirdLi.innerHTML);
+        </script>
+    </div>
+</body>
+
+</html>

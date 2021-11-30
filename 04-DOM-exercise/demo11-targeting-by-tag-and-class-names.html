@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <article class="list">
+            <p>First</p>
+            <p>Second</p>
+            <p>Third</p>
+            <p>PPT The tag name specifies the type of element – div, p, ul, etc.
+            </p>
+            <p>PPT Class names are used for styling and easier selection</p>
+            <p>PPT Both methods return a live HTMLCollection
+               Even if only one element is selected! This is a common mistake</p>
+        </article>
+        <script>
+            const elements = document.getElementsByTagName('p');
+            console.log(elements);
+            const elementsTwo = document.getElementsByClassName('list');
+            console.log(elementsTwo);
+        </script>
+    </div>
+</body>
+
+</html>

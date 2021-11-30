@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <article class="list">
+            <p>First</p>
+            <p>Second</p>
+            <p>Third</p>
+            <p>PPT NodeList and HTMLCollection are NOT arrays but can be indexed and iterated</p>
+            <p>PPT Both can be explicitly converted to an array</p>
+        </article>
+        <script>
+            const elements = document.querySelectorAll('p');
+            // Select the first paragraph on the page
+            const first = elements[0];
+            // Iterate over all entries
+            for (let p of elements) {
+                console.log(p);
+            }
+
+            // Both can be explicitly converted to an array
+            const elementArray = Array.from(elements);
+            const elementArr2 = [...elements]; // Spread syntax
+            elementArray.forEach((el) => console.log(el.innerHTML + ' Panyo wagwan'));
+            console.log(elementArray);
+            console.log(elementArr2);
+
+        </script>
+    </div>
+</body>
+
+</html>

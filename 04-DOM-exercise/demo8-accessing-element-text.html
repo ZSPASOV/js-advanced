@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">This is JavaScript</div>
+    <ul>
+        <li>PPT The contents of HTML elements are stored in text nodes</li>
+        <li>PPT If the element has children, returns all text concatenated</li>
+        <li>PPT To access the contents of an element:</li>
+    </ul>
+    <script>
+        let element = document.getElementById('main')
+        let text = element.textContent; //This is JavaScript!
+        console.log(element.textContent);
+        element.textContent = "Welcome to the DOM";
+        console.log(element.textContent);
+    </script>
+
+</body>
+
+</html>
