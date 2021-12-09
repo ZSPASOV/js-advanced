@@ -1,0 +1,27 @@
+<!-- getAttribute() - returns the value of attributes ofspecified HTML element -->
+<!-- <input type="text" name="username"/>
+<input type="password" name="password"/> -->
+<!-- const inputEle = document.getElementsByTagName('input')[0];
+inputEle.getAttribute('type'); // text
+inputEle.getAttribute('name'); // username -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <script>
+        const inputEle = document.getElementsByTagName('input')[0]
+        console.log(inputEle.getAttribute('type')); // text
+        console.log(inputEle.getAttribute('name')); // username
+    </script>
+</body>
+
+</html>

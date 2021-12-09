@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- hasAttribute() -  method reurns true if the specifiedattribute exists, otherwise it returns false -->
+    <input type="text" name="username" placeholder="Username...">
+    <input type="password" name="password" id="password">
+    <script>
+        const passwordElement = document.getElementById('password');
+        console.log(passwordElement.hasAttribute('name')); // true 
+        console.log(passwordElement.hasAttribute('placeholder')); // false
+    </script>
+</body>
+
+</html>

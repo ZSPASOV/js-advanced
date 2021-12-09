@@ -1,0 +1,21 @@
+<!-- classList - is a read-only property that returns a collection of the class attributes of specified element -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myDiv" class="container div root">asd</div>
+    <script>
+        let element = document.getElementById('myDiv').classList;
+        // < !--DOMTokenList(3)["container", "div", "root", value: "container div root"]-->
+        // console.log(element)
+        </script>
+
+</body>
+</html>
